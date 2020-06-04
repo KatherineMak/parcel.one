@@ -1,0 +1,114 @@
+body
+  font-family: Arial
+
+.title
+  text-align: center
+  font-size: 18px
+  line-height: 21px
+  letter-spacing: 0px
+  color: #3E4C69
+.subtitle
+  font-size: 12px
+  line-height: 14px
+  letter-spacing: 0px
+  color: #661600
+  margin-bottom: 5px
+  font-weight: 500
+.text
+  font-size: 12px
+  line-height: 15px
+  letter-spacing: 0px
+  color: #0D0D0D
+.text-checkbox
+  padding-left: 15px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translate(0, -50%)
+    width: 10px
+    height: 10px
+    border: 1px solid #3E4C69
+    border-radius: 1px
+  &_true
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: calc(50% + 2px)
+      left: 1px
+      transform: translate(0, -50%)
+      width: 10px
+      height: 10px
+      background-image: url("/img/cross.png")
+      background-size: 7px 7px
+      background-repeat: no-repeat
+.text-footer
+  color: white
+  font-size: 10px
+  line-height: 15px
+
+.row
+  display: flex
+  justify-content: space-between
+  align-items: center
+.col
+  min-width: 130px
+
+
+.frame
+  border: 1px solid #3E4C69
+  border-radius: 2px
+  padding: 10px
+  width: 100%
+  min-height: 100px
+  &_sm
+    max-width: 250px
+  &_lg
+    max-width: 410px
+  &_md
+    max-width: 315px
+    padding: 5px
+    margin-right: 20px
+  &__row
+    justify-content: flex-start
+    align-items: flex-start
+    margin-top: 15px
+
+.lines
+  margin-top: -15px
+.line
+  display: flex
+  align-items: center
+  justify-content: center
+  letter-spacing: 0px
+  color: #FFFFFF
+  &_blue
+    width: 300px
+    height: 30px
+    background-color: #3E4C69
+    text-align: center
+    font-size: 18px
+    line-height: 21px
+    font-weight: bold
+    margin-bottom: 60px
+  &_red
+    width: 320px
+    height: 40px
+    background: #661600
+    margin-bottom: 10px
+    font-size: 24px
+    line-height: 28px
+
+
+.header
+  display: flex
+  justify-content: flex-end
+  padding: 25px 50px 0 50px
+  &__logo
+    width: 200px
+    height: 50px
+    object-fit: contain

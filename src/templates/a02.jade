@@ -1,0 +1,54 @@
+---
+title: Firmen-Lastschrift
+---
+extends layouts/_layout
+block content
+    .firmen__header
+        .header
+            .header__logo
+                img(src="img/logo.png", alt="parcel.one")
+    section.firmen
+        h1.title.lastschrift__title SEPA-Firmenlastschrift-Mandat für SEPA-FIrmenlastschriften
+        .row.lastschrift__row
+            .frame.frame_sm
+                h2.subtitle Name und Anschrift des Zahlers
+            .frame.frame_lg
+                h2.subtitle Name des Zahlungsdienstleisters des Zahlers
+                .row.frame__row
+                    .col
+                        h2.subtitle BIC
+                    .col
+                        h2.subtitle IBAN
+        .row.lastschrift__row
+            .frame.frame_sm
+                h2.subtitle Name und Anschrift des Zahlungsempfängers
+                p.text PARCEL.ONE GmbH
+                p.text Otto-Hahn-Str. 21
+                p.text 35510 Butzbach
+            .frame.frame_lg
+                h2.subtitle Name des Zahlungsdienstleisters des Zahlers
+                p.text DE67ONE00002014326
+                .row.frame__row
+                    .col
+                        h2.subtitle Mandatsreferenz
+                    .col
+                        p.text.text-checkbox Mandat für einmalige Zahlungen
+                        p.text.text-checkbox.text-checkbox_true Mandat für wiederkehrende Zahlungen
+
+
+        h2.subtitle.lastschrift__subtitle SEPA-Firmenlastschrift
+        p.text
+            b 1.1 SEPA-Firmenlastschrift-Mandat an den Zahlungsempfänger
+        p.text.lastschrift__text Ich/Wir ermächtige(n) den oben genannten Zahlungsempfänger, Zahlungen von meinem/unserem Konto mittels Lastschrift einzuziehen. Zugleich weise ich meinen/weisen wir unseren oben genannten Zahlungsdienstleister an, die vom oben genannten Zahlungsempfänger auf mein/unser Konto gezogenen Lastschriften einzulösen.
+        p.text.lastschrift__text
+            b Hinweis:
+            | Dieses Lastschriftmandat dient nur dem Einzug von Lastschriften, die auf Konten von Unternehmen gezogen sind. Ich bin/Wir sind nicht berechtigt, nach der erfolgten Einlösung eine Erstattung des belasteten Betrages zu verlangen. Ich bin/Wir sind berechtigt, meinen/unseren Zahlungsdienstleister bis zum Fälligkeitstag anzuweisen, Lastschriften nicht einzulösen.
+        p.text
+            b 2 Bestätigung des SEPA-Firmenlastschrift-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers
+        p.text.lastschrift__text Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Firmenlastschriftmandats an den oben genannten Zahlungsempfänger.
+
+        .row.lastschrift__bottom
+            .frame.frame_md
+                h2.subtitle Unterschrift(en) des/der Kontoinhabers/Kontoinhaber
+            .frame.frame_md
+                h2.subtitle Ort, Datum
